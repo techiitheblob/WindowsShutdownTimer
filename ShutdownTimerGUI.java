@@ -27,6 +27,26 @@ public class ShutdownTimerGUI extends JFrame implements ActionListener {
         panel.add(minutesField);
         panel.add(submitButton);
         panel.add(cancelButton);
+        
+        submitButton.setBackground(new Color(255, 182, 193));
+        submitButton.setOpaque(true);
+        submitButton.setBorderPainted(false);
+        submitButton.setFocusPainted(false);
+        submitButton.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        submitButton.setFont(new Font("Arial", Font.BOLD, 14));
+        submitButton.setForeground(Color.WHITE);
+        submitButton.setPreferredSize(new Dimension(100, 40));
+        submitButton.setUI(new RoundButtonUI());
+
+        cancelButton.setBackground(new Color(255, 182, 193));
+        cancelButton.setOpaque(true);
+        cancelButton.setBorderPainted(false);
+        cancelButton.setFocusPainted(false);
+        cancelButton.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        cancelButton.setFont(new Font("Arial", Font.BOLD, 14));
+        cancelButton.setForeground(Color.WHITE);
+        cancelButton.setPreferredSize(new Dimension(100, 40));
+        cancelButton.setUI(new RoundButtonUI());
 
         add(panel);
         setVisible(true);
